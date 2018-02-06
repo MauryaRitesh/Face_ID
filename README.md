@@ -1,6 +1,6 @@
 # Face_ID
 * AIM
-  To create a simple and reliable Face Recognition program (For this VIDEO)[] by using (Tensorflow)[https://www.tensorflow.org/] in the (Python)[https://www.python.org/] Programming Language.
+  To create a simple and reliable Face Recognition program (For this VIDEO) by using (Tensorflow)[https://www.tensorflow.org/] in the (Python)[https://www.python.org/] Programming Language.
   
   
 * Setup
