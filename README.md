@@ -10,7 +10,13 @@
   To install tensorflow, hit the following in the terminal:
   
       pip install tensorflow
-      
+      pip install opencv
+     
+  I'm using OpenCV for taking a realtime image of our faces from our WebCamera and then Identify that image from the retrained model!
+  In this way, our program of face_ID will work.
+  
+  NOTE: You must have a WebCamera, either on your Laptop or Computer!
+  
   That's enough for (this)[] video.
   Also, you need to clone this Repository, to do so, hit the following:
      
@@ -31,3 +37,9 @@
       --output_labels=tf_files/retrained_labels.txt \
       --architecture=mobilenet_1.0_224 \
       --image_dir=tf_files/images
+
+* Using the Model
+
+  To get the model Working, hit the following:
+  
+      python -m scripts.label_image
