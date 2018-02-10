@@ -1,6 +1,6 @@
 # Face_ID
 * AIM
-  To create a simple and reliable Face Recognition program (For this VIDEO) by using (Tensorflow)[https://www.tensorflow.org] in the (Python)[https://www.python.org] Programming Language.
+  To create a simple and reliable Face Recognition program (For this VIDEO) by using Tensorflow in the Python Programming Language.
   
   
 * Setup
@@ -18,3 +18,12 @@
   You will need a lot of images of your(or the one for whom you are creating the Face ID) Faces, i.e., go ahead and take hundreds of
   thousands of selfies and fill all those in the Images folder of this repository. You will need to create a Folder and rename as your
   name. E.g., Create a folder named Ritesh and another as Not Ritesh.
+
+* ReTraining
+  To train the model, hit the following:
+  
+      python -m scripts.retrain \
+      --output_graph=tf_files/retrained_graph.pb \
+      --output_labels=tf_files/retrained_labels.txt \
+      --architecture=mobilenet_v1_224 \
+      --image_dir=tf_files/images
