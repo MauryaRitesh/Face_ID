@@ -35,7 +35,7 @@
       python -m scripts.retrain \
       --output_graph=tf_files/retrained_graph.pb \
       --output_labels=tf_files/retrained_labels.txt \
-      --architecture=mobilenet_1.0_224 \
+      --architecture=inception_v3 \
       --image_dir=tf_files/images
 
 * Using the Model
