@@ -9,8 +9,6 @@ import time
 import numpy as np
 import tensorflow as tf
 
-from cv2 import *
-
 def load_graph(model_file):
   graph = tf.Graph()
   graph_def = tf.GraphDef()
@@ -21,16 +19,6 @@ def load_graph(model_file):
     tf.import_graph_def(graph_def)
 
   return graph
-
-def capture_image():
-  cam = VideoCapture(0)
-  s, img = cam.read()
-  if s:
-    namedWindow("cam-test")
-    imshow("cam-test",img)
-    waitKey(0)
-    imwrite("/tmp/image.jpg",img)
-    destroyWindow("cam-test")
 
 def read_tensor_from_image_file(file_name, input_height=299, input_width=299,
 				input_mean=0, input_std=255):
@@ -65,8 +53,7 @@ def load_labels(label_file):
   return label
 
 if __name__ == "__main__":
-  capture_image()
-  file_name = "/tmp/image.jpg"
+  file_name = "tf_files/flower_photos/daisy/3475870145_685a19116d.jpg"
   model_file = "tf_files/retrained_graph.pb"
   label_file = "tf_files/retrained_labels.txt"
   input_height = 299
