@@ -28,7 +28,7 @@
   thousands of selfies and fill all those in the Images folder of this repository. You will need to create a Folder and rename as your
   name. E.g., Create a folder named Ritesh and another as Not Ritesh.
 
-* ReTraining
+* (Re)Training
 
   To train the model, hit the following:
   
