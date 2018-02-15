@@ -10,7 +10,7 @@
   To install tensorflow, hit the following in the terminal:
   
       pip install tensorflow
-      pip install opencv
+      pip install opencv-python
      
   I'm using OpenCV for taking a realtime image of our faces from our WebCamera and then Identify that image from the retrained model!
   In this way, our program of face_ID will work.
