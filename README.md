@@ -43,3 +43,6 @@
   To get the model Working, hit the following:
   
       python -m scripts.label_image
+      
+  That's enough for now!
+  Do STAR this Repo if it really helped you!
