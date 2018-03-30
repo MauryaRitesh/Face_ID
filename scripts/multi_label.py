@@ -128,16 +128,10 @@ if __name__ == "__main__":
 
   top_k = results.argsort()[-5:][::-1]
   labels = load_labels(label_file)
-
-  ##print('\nEvaluation time (1-image): {:.3f}s\n'.format(end-start))
-
-  ##for i in top_k:
-    ##print(labels[i], results[i])
+	
+	
+  k = 0
   
-for i in results[1:]
-  i *= 100
-  if i >= 75:
-    print ('Recognised as Ritesh!')
-    print(labels[1], results[1])
-  else:
-    print ('Not Recognised!')
+  for i in results[:]:
+    print (labels[k], results[k])
+    k += 1
